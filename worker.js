@@ -14,20 +14,20 @@ const HOST_MAP = {
   // Authority Center hub
   "pattismithrealtor.com": "PattiSmithRealtor.com",
 
-  // Area authority sites — subdirectory names match the actual repo folders (domain-named)
-  "pattismithgeorgetowncalifornia.com": "pattismithgeorgetowncalifornia.com",
-  "pattismithgardenvalleycalifornia.com": "pattismithgardenvalleycalifornia.com",
-  "pattismithcoolcalifornia.com": "pattismithcoolcalifornia.com",
-  "pattismithplacervillecalifornia.com": "pattismithplacervillecalifornia.com",
-  "pattismithpilothillcalifornia.com": "pattismithpilothillcalifornia.com",
-  "pattismitheldoradocountyca.com": "pattismitheldoradocountyca.com",
+  // Area authority sites — under the Area-Sites/ group folder (domain-named)
+  "pattismithgeorgetowncalifornia.com": "Area-Sites/pattismithgeorgetowncalifornia.com",
+  "pattismithgardenvalleycalifornia.com": "Area-Sites/pattismithgardenvalleycalifornia.com",
+  "pattismithcoolcalifornia.com": "Area-Sites/pattismithcoolcalifornia.com",
+  "pattismithplacervillecalifornia.com": "Area-Sites/pattismithplacervillecalifornia.com",
+  "pattismithpilothillcalifornia.com": "Area-Sites/pattismithpilothillcalifornia.com",
+  "pattismitheldoradocountyca.com": "Area-Sites/pattismitheldoradocountyca.com",
 
-  // Book sites — subdirectory names match the actual repo folders
-  "pattismithnavigatingeldoradocountyrealestate.com": "TurbulenceBook",
-  "pattismithyoureldoradocountyrealestateconsultant.com": "BizCardBook",
-  "pattismithbuyingyoureldoradocountyhome.com": "NowNotLaterBook",
-  "pattismithsellingyoureldoradocountyhome.com": "HiddenCostsBook",
-  "pattismitheldoradocountyprobate.com": "book-probate",
+  // Book sites — under the Book-Sites/ group folder
+  "pattismithnavigatingeldoradocountyrealestate.com": "Book-Sites/TurbulenceBook",
+  "pattismithyoureldoradocountyrealestateconsultant.com": "Book-Sites/BizCardBook",
+  "pattismithbuyingyoureldoradocountyhome.com": "Book-Sites/NowNotLaterBook",
+  "pattismithsellingyoureldoradocountyhome.com": "Book-Sites/HiddenCostsBook",
+  "pattismitheldoradocountyprobate.com": "Book-Sites/book-probate",
 };
 
 export default {
