@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pattismithcoolcalifornia.com/sitemap.xml

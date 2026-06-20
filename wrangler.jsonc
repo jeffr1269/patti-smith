@@ -1,0 +1,38 @@
+{
+  // Patti Smith — member Worker (Cloudflare Workers with Static Assets)
+  // One Worker per member; hostnames are routed to subdirectories in /public by worker.js.
+  "name": "patti-smith",
+  "main": "worker.js",
+  "compatibility_date": "2026-06-20",
+
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+
+  // TWO-PHASE DEPLOY: only list a hostname here AFTER it is Active in this
+  // Cloudflare account. wrangler validates custom_domain routes against existing
+  // zones at deploy time, so adding a not-yet-Active domain fails the whole deploy.
+  // Bare hostnames only — no "/*", no "zone_name".
+  "routes": [
+    { "pattern": "pattismithrealtor.com", "custom_domain": true },
+    // book-probate "coming soon" site (files in /public/book-probate)
+    { "pattern": "pattismitheldoradocountyprobate.com", "custom_domain": true }
+
+    // Phase 2 — uncomment each line as that site's files are added to /public
+    // and its domain is Active in Cloudflare:
+    // ,{ "pattern": "pattismithgeorgetowncalifornia.com",  "custom_domain": true }
+    // ,{ "pattern": "pattismithgardenvalleycalifornia.com", "custom_domain": true }
+    // ,{ "pattern": "pattismithcoolcalifornia.com",         "custom_domain": true }
+    // ,{ "pattern": "pattismithplacervillecalifornia.com",  "custom_domain": true }
+    // ,{ "pattern": "pattismithpilothillcalifornia.com",    "custom_domain": true }
+    // ,{ "pattern": "pattismitheldoradocountyca.com",       "custom_domain": true }
+    // ,{ "pattern": "pattismithnavigatingeldoradocountyrealestate.com",   "custom_domain": true }
+    // ,{ "pattern": "pattismithyoureldoradocountyrealestateconsultant.com","custom_domain": true }
+    // ,{ "pattern": "pattismithbuyingyoureldoradocountyhome.com",         "custom_domain": true }
+    // ,{ "pattern": "pattismithsellingyoureldoradocountyhome.com",        "custom_domain": true }
+  ]
+}
