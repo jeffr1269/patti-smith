@@ -19,20 +19,21 @@
   // Bare hostnames only — no "/*", no "zone_name".
   "routes": [
     { "pattern": "pattismithrealtor.com", "custom_domain": true },
-    // book-probate "coming soon" site (files in /public/book-probate)
-    { "pattern": "pattismitheldoradocountyprobate.com", "custom_domain": true }
+    // probate "coming soon" site (Book-Sites/book-probate)
+    { "pattern": "pattismitheldoradocountyprobate.com", "custom_domain": true },
 
-    // Phase 2 — uncomment each line as that site's files are added to /public
-    // and its domain is Active in Cloudflare:
-    // ,{ "pattern": "pattismithgeorgetowncalifornia.com",  "custom_domain": true }
-    // ,{ "pattern": "pattismithgardenvalleycalifornia.com", "custom_domain": true }
-    // ,{ "pattern": "pattismithcoolcalifornia.com",         "custom_domain": true }
-    // ,{ "pattern": "pattismithplacervillecalifornia.com",  "custom_domain": true }
-    // ,{ "pattern": "pattismithpilothillcalifornia.com",    "custom_domain": true }
-    // ,{ "pattern": "pattismitheldoradocountyca.com",       "custom_domain": true }
-    // ,{ "pattern": "pattismithnavigatingeldoradocountyrealestate.com",   "custom_domain": true }
-    // ,{ "pattern": "pattismithyoureldoradocountyrealestateconsultant.com","custom_domain": true }
-    // ,{ "pattern": "pattismithbuyingyoureldoradocountyhome.com",         "custom_domain": true }
-    // ,{ "pattern": "pattismithsellingyoureldoradocountyhome.com",        "custom_domain": true }
+    // Area sites
+    { "pattern": "pattismithgeorgetowncalifornia.com", "custom_domain": true },
+    { "pattern": "pattismithgardenvalleycalifornia.com", "custom_domain": true },
+    { "pattern": "pattismithcoolcalifornia.com", "custom_domain": true },
+    { "pattern": "pattismithplacervillecalifornia.com", "custom_domain": true },
+    { "pattern": "pattismithpilothillcalifornia.com", "custom_domain": true },
+    { "pattern": "pattismitheldoradocountyca.com", "custom_domain": true },
+
+    // Book sites
+    { "pattern": "pattismithnavigatingeldoradocountyrealestate.com", "custom_domain": true },
+    { "pattern": "pattismithyoureldoradocountyrealestateconsultant.com", "custom_domain": true },
+    { "pattern": "pattismithbuyingyoureldoradocountyhome.com", "custom_domain": true },
+    { "pattern": "pattismithsellingyoureldoradocountyhome.com", "custom_domain": true }
   ]
 }
